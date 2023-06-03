@@ -1,0 +1,33 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Solar Panels"
+  subtitle="Lowest Cost Solar Panels in America"
+  color="black"
+  id="model-s"
+>
+  <div slot="footer" class="flex gap-x-10 justify-center">
+    <a
+        class="bg-[#171a20cc] backdrop-blur-ms rounded text-sm font-medium text-white px-20 py-2 inline-flex justify-center items-center" 
+        href="#"
+    >
+        Order Now</a
+    >
+    <a
+        class="bg-[#f4f4f4a6] backdrop-blur-ms rounded text-sm font-medium text-gray-800 px-20 py-2 inline-flex justify-center items-center"
+        href="#"
+    >
+      Demo Drive</a
+    >
+  </div>
+
+  <img
+    slot="background"
+    alt="Model S"
+    class="h-full w-full object-cover object-center"
+    src="solar-panels.avif"
+    id="bg-image-models"
+  />
+</Section>

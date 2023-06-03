@@ -1,35 +1,26 @@
-<section 
-    class="landing-section bg-black h-screen text-center relative overflow-hidden"
-    data-header-color="white"
->
-    <div class="z-30 relative h-full flex flex-col">
-    <header>
-        <h2 class="text-white pt-[15rem] text-[40px] font-medium">
-            Experience Tesla
-        </h2>
-        <p class="text-white text-sm">
-            Schedule a Demo Drive Today
-        </p>
-    </header>
+---
+import Section from "./Section.astro"
+---
 
-    <footer class="flex flex-col flex-grow justify-end pb-24"> 
-        <div>
-        <a 
-            class="border-[3px] border-white bg-white/5 backdrop-blur-ms rounded text-ms font-medium text-white px-20 py-2 inline-block transition-colors duration-[1000ms] hover:bg-white hover:text-gray-950" 
-            href="#"
-        >
-            Demo Drive
-        </a>
-        </div>
-    </footer>
-    </div>
-    <div class="absolute inset-0">
-    <video 
-        class="object-center object-cover h-full w-full"
-        autoplay 
-        muted 
-        loop 
-        src="/Homepage-Test_Drive-NA-Desktop.webm"
-    ></video>
-    </div>
-</section>
+<Section
+  title="Disfrute de tesla"
+  subtitle="Programe una prueba de conducción hoy mismo"
+  color="white"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#"
+    >
+      Prueba de conducción</a
+    >
+  </div>
+
+  <video
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    autoplay
+    muted
+    loop
+    src="/video.webm"></video>
+</Section>
